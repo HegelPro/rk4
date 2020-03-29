@@ -1,0 +1,20 @@
+{
+  "name": "lecture_03_0004",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --history-api-fallback --inline --progress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "description": "",
+  "dependencies": {
+    "node-static": "^0.7.11"
+  }
+}
