@@ -1,3 +1,5 @@
+import { range } from "ramda"
+
 const dirivative = (f, t, h) => {
   return (f(t + h) - f(t)) / h
 }
@@ -41,8 +43,7 @@ export const rk4 = ({
   f, T0, T, N
 }) => {
   const h = (T-T0) / N
-  return new Array(N)
-    .fill(0)
+  return range(0, N)
     .reduce(res => {
       let [t, x] = res[res.length - 1]
       res.push([t+h, xNext(f, x, t, h), eps(f, x, t, h)])
