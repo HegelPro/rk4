@@ -5,9 +5,27 @@
     <title>Webpack Setup</title>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
+  <style>
+    .container {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: antiquewhite;
+    }
+
+    .chart {
+      width: 500px;
+      height: 500px;
+      margin: 10px;
+    }
+  </style>
   <body>
-    <div id="function_chart" style="width: 500px; height: 500px"></div>
-    <div id="delta_chart" style="width: 500px; height: 500px"></div>
+    <div class="container">
+      <div class="chart" id="function_chart"></div>
+      <div class="chart" id="delta_chart"></div>
+    </div>
     <script type="module" src="../index.js"></script>
   </body>
 </html>
